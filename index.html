@@ -116,6 +116,60 @@
         width: 100%;
         max-height: none;
       }
+
+.titulo-neon{
+
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #ffffff;
+
+    text-shadow:
+        0 0 5px #00ffff,
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 40px #00ffff,
+        0 0 80px #00ffff;
+
+    animation:
+        flicker 2.5s infinite alternate,
+        pulse 3s infinite;
+}
+
+@keyframes flicker{
+
+    0%,18%,22%,25%,53%,57%,100%{
+        opacity:1;
+    }
+
+    20%,24%,55%{
+        opacity:0.35;
+    }
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+        filter:hue-rotate(0deg);
+    }
+
+    50%{
+        transform:scale(1.05);
+        filter:hue-rotate(30deg);
+    }
+
+    100%{
+        transform:scale(1);
+        filter:hue-rotate(0deg);
+    }
+}
+
+
+
+
+      
     }
   </style>
 </head>
@@ -127,7 +181,8 @@
 
  <div class="container">
 
-  <h1>MEGACONSTRUCCIÓN - TORRE ICÓNICA - PROYECTO FLOR DEL CARIBE® - Autor: Ing. Gabriel Frávega - mayo/2026 - IHA® - </h1>
+  <h1>class="titulo-neon">
+    MEGACONSTRUCCIÓN - TORRE ICÓNICA - PROYECTO FLOR DEL CARIBE® - Autor: Ing. Gabriel Frávega - mayo/2026 - IHA® - </h1>
       <h3> Derechos Reservados bajo pactos internacionales por el autor</h3>
   
  <h2>anteproyecto de un ícono tangible para una empresa de tecnología de punta </h2> 
